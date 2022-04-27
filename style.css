@@ -4,7 +4,7 @@
     flex-direction: column;
 }
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-.first,.second,.third,.fourth{
+.first,.second,.third{
     display: flex;
     flex-direction:row;
     margin: 5px;
@@ -34,7 +34,7 @@ select:hover{
 .first2,.second2,.third2,.first1,.second1,.third1,.first3,.second3,.third3,.fourth1,.fourth2,.fourth3{
     display: flex;
     width:auto;
-    height: 70px;
+    height: 40px;
     font-size: 20px;
     flex-direction: row;
     border-radius: 12px;
@@ -44,6 +44,15 @@ select:hover{
 .contain{
     display: flex;
     flex-direction: row;
+}
+h2{
+    border: 4px solid rgb(0, 255, 72);
+    width: 90px;
+    height: 50px;
+    border-radius: 50%;
+    padding-top: 5px;
+    text-align: center;
+    align-items: center;
 }
 #mind{
     width: 500px;
@@ -91,8 +100,12 @@ input:focus{
      border-radius: 50px;
 }
 .first div,.second div,.third div,.fourth div{
-     margin: 10px;
-     padding: 20px;
+     margin: 5px;
+     padding: 5px;
+}
+.icon div{
+    padding: 2px;
+    margin: 2px;   
 }
 select{
     font-size: 20px;
@@ -146,4 +159,69 @@ button:hover{
 img{
     width: 120px;
     height: 120px;
+}
+.response{
+    display: flex;
+    flex-direction: column;
+    padding-left: 120px;
+}
+#answer{
+    border: 4px solid blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+h1{
+    padding: 10px;
+    border: 2px solid red;
+}
+
+
+.answer div {
+    display: flex;
+    align-items: center;
+    margin: 5px;
+    padding: 8px;
+    font-size: 25px;
+    border: 2px double rgb(34, 255, 0);
+}
+.analysis{
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+}
+.analysis div{
+    margin-left: 40px;
+    margin-top: 80px;
+}
+.analysis #nextEq{
+    margin-top: 60px;
+}
+#nextEq,#Submit{
+    width: 170px;
+    height: 40px;
+    color: wheat;
+    font-size:25px ;
+    border:none;
+}
+#Submit{
+    background-color: green;
+}
+#nextEq{
+    background-color: blue;
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: antiquewhite;
+    height: 50px;
+    width: 500px;
+    margin-left: 500px;
+}
+footer div{
+    margin-left: 30px;
+    font-size: 35px;
 }
