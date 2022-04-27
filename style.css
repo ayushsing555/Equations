@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+.container{
+    display: flex;
+    flex-direction: column;
+}
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+.first,.second,.third,.fourth{
+    display: flex;
+    flex-direction:row;
+    margin: 5px;
+    align-items: center;
+}
+select{
+    border:none
+}
+select:hover{
+    cursor: pointer;
+}
+.operator{
+    width: 30px;
+    height: 30px;
+}
+#magic{
+    text-transform:uppercase;
+    
+    font-family: 'Pacifico', cursive;
+    color: red;
+}
+#eq{
+    text-transform:uppercase;
+    font-family: 'Dancing Script', cursive;
+    color: blue;
+}
+.first2,.second2,.third2,.first1,.second1,.third1,.first3,.second3,.third3,.fourth1,.fourth2,.fourth3{
+    display: flex;
+    width:auto;
+    height: 70px;
+    font-size: 20px;
+    flex-direction: row;
+    border-radius: 12px;
+    color: green;
+    border: 3px solid rgb(4, 255, 0);
+}
+.contain{
+    display: flex;
+    flex-direction: row;
+}
+#mind{
+    width: 500px;
+    padding-left:200px;
+    height: 400px;
+}
+navvar{
+    display: flex;
+    align-items: center;
+    margin-top:0;
+}
+#logo:hover{
+    cursor: pointer;
+}
+navvar div{
+    margin-left: 4px;
+    margin-right: 4px;
+}
+input {
+    height: 40px;
+    width: 200px;
+    color: blue;
+    border-color: blue;
+    border-top:none;
+    border-left: none;
+    border-right: none;
+    font-size: 20px;
+}
+
+input:focus{
+    border:none;
+}
+#logo{
+    width: 200px;
+    height: 220px;
+}
+.first1,.second1,.third1,.fourth1{
+     color: red;
+     border-radius: 30px;
+     border-color:brown;
+}
+.first3,.second3,.third3,.fourth3{
+     color: blue;
+     border-color: blue;
+     border-radius: 50px;
+}
+.first div,.second div,.third div,.fourth div{
+     margin: 10px;
+     padding: 20px;
+}
+select{
+    font-size: 20px;
+}
+.icon{
+    font-size: 30px;
+
+}
+#btn1{
+    background-image:linear-gradient(to right,rgb(237, 109, 109) 50%,white 50%);
+    height: 40px;
+    width: 200px;
+    border:none;
+    font-size:20px;
+}
+#btn2{
+    background-image:linear-gradient(to left,rgb(237, 109, 109) 50%,white 50%);
+    height: 40px;
+    width: 200px;
+    border:none;
+    font-size:20px;
+}
+button:hover{
+    cursor: pointer;
+}
+#lavel{
+    height: 40px;
+}
+.first .fa-solid{
+    font-size: 30px;
+    color: red;
+}
+.third1 div{
+    width: auto;
+    height:auto;
+}
+#btn1:hover{
+    background-image:linear-gradient(to right,rgb(237, 109, 109) 100%,white 0%);
+    font-size: 25px;
+    border-radius: 10px;
+    border:none;
+    cursor: pointer;
+}
+#btn2:hover{
+    background-image:linear-gradient(to left,rgb(237, 109, 109) 100%,white 0%);
+    font-size: 25px;
+    border-radius: 20px;
+    border:none;
+    cursor: pointer;
+}
+img{
+    width: 120px;
+    height: 120px;
+}
