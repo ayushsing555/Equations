@@ -6,234 +6,179 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <navvar>
         <div>
-            <h1><span id="magic">Magical</span><span id="eq">Equations</span></h1>
+            <h1><span id="magic">Magical-</span><span id="eq">Equations</span></h1>
         </div>
         <div>
             <img id="logo" src="image/Picsart_22-04-14_18-06-16-614.jpg"/>
         </div>
         <div>
-            <input type="text" placeholder="Enter your name" disabled>
+            <input type="text" id="name" placeholder="Enter your name">
         </div>
-        <div>
-            <select name=""id="lavel" disabled>
-                <option value="0">Easy</option>
-                <option value="1">Moderate</option>
-                <option value="2">Hard</option>
+        <div class="lavel">
+                <b id="c-id" style="font-size: 20px; color: rgb(248, 201, 115); ">Coming soon</b>
+            <select id="lavel"disabled>
+                <option value="0" >Easy</option>
+                <option  value="1">Moderate</option>
+                <option   value="2" disabled>Hard</option>
             </select>
         </div>
         <div>
-            <input type="number" id="noOfQues" min="4" placeholder="No Of Questions" disabled>
+            <input type="number" id="noOfQues" min="4" placeholder="No Of Questions">
         </div>
         <div>
-            <button id="btn1">Start</button>
+            <button  class="buttonstart btnstart"id="btn1">Start</button>
         </div>
         <div>
             <button id="btn2">ReadArtical</button>
         </div>
     </navvar>
-   <div class="contain">
-    <div class="container">
+     <div class="result">
+        <div>
+         <center  style="border: 3px solid rgb(255, 0, 43); width: 400px;  margin: 30px; padding: 30px;">
+              <h1 style="width: 250px; height: 40px; color: red; text-align: center; border:3px solid black;" id="player_name">ayush</h1>
+              <h2 style="width: 160px; border: 4px dashed blue; border-radius:1px;">Score-<span id="player_score">12</span></h2>
+              <button onclick="Reset()" style="width: 180px; height: 40px;" id="restart">PlayAgain</button>
+         </center>
+        </div>
+        <div>
+            <img id="result_img" src="" alt="">
+        </div>
+     </div>
+     <div class="contain">
+     <div class="container">
         <div class="first">
             <div class="icon first1">
-                <div>
-                    <i class="fa-solid fa-tree"></i>
-                </div>
-                <div>
-                    <i class="fa-solid fa-tree"></i>
-                </div>
-                <div>
-                    <i class="fa-solid fa-tree"></i>
-                </div>
             </div>
             <div class="operation">
-                <img class="operator" src="image/minus-button.png"/>
+                <img class="operator" src="image/plus.png"/>
             </div>
             <div class=" icon first2">
-                <div>
-                    <i class="fa-solid fa-tree"></i>
-                </div>
-                <div>
-                    <i class="fa-solid fa-tree"></i>
-                </div>
-                <div>
-                    <i class="fa-solid fa-tree"></i>
-                </div>
             </div>
             <div class="operation">
                 <img class="operator" src="image/plus.png"/>
             </div>
             <div class=" icon first3">
-                <div>
-                    <i class="fa-solid fa-tree"></i>
-                </div>
-                <div>
-                    <i class="fa-solid fa-tree"></i>
-                </div>
-                <div>
-                    <i class="fa-solid fa-tree"></i>
-                </div>
             </div>
             <div class="operation">
                 <img class="operator" src="image/equal.png"/>
             </div>
             <div class="equal">
-                <h2>121</h2>
+                <h2 id="equal0"></h2>
             </div>
         </div>
         <div class="second">
             <div class="icon second1">
-                <div>
-                    <i class="fa-solid fa-tree"></i>
-                </div>
-                <div>
-                    <i class="fa-solid fa-tree"></i>
-                </div>
-                <div>
-                    <i class="fa-solid fa-tree"></i>
-                </div>
             </div>
             <div>
                 <img class="operator" src="image/plus.png"/>
             </div>
             <div class="icon second2">
-                <div>
-                    <i class="fa-solid fa-tree"></i>
-                </div>
-                <div>
-                    <i class="fa-solid fa-tree"></i>
-                </div>
-                <div>
-                    <i class="fa-solid fa-tree"></i>
-                </div>
             </div>
             <div class="operation">
                 <img class="operator" src="image/plus.png"/>
             </div>
             <div class="icon second3">
-                <div>
-                    <i class="fa-solid fa-tree"></i>
-                </div>
-                <div>
-                    <i class="fa-solid fa-tree"></i>
-                </div>
-                <div>
-                    <i class="fa-solid fa-tree"></i>
-                </div>
             </div>
             <div class="operation">
                 <img class="operator" src="image/equal.png"/>
             </div>
             <div class="equal">
-                <h2>122</h2>
+                <h2 id="equal1"></h2>
             </div>
         </div>
         <div class="third">
             <div class="icon third1">
-                <div>
-                    <i class="fa-solid fa-tree"></i>
-                </div>
-                <div>
-                    <i class="fa-solid fa-tree"></i>
-                </div>
-                <div>
-                    <i class="fa-solid fa-tree"></i>
-                </div>
             </div>
-              <div>
-                <img  class="operator" src="image/minus-button.png">
-              </div>
-            <div class="icon third2">
-                <div>
-                    <i class="fa-solid fa-tree"></i>
-                </div>
-                <div>
-                    <i class="fa-solid fa-tree"></i>
-                </div>
-               <!--  <div>
-                    <i class="fa-solid fa-tree"></i>
-                </div> -->
+            <div>
+              <img  class="operator" src="image/plus.png">
             </div>
+            <div class="icon third2"></div>
               <div>
-                <img  class="operator" src="image/minus-button.png">
+                <img  class="operator" src="image/plus.png">
               </div>
             <div class="icon third3">
-                <div>
-                    <i class="fa-solid fa-tree"></i>
-                </div>
-                <div>
-                    <i class="fa-solid fa-tree"></i>
-                </div>
-                <div>
-                    <i class="fa-solid fa-tree"></i>
-                </div>
-                <div>
-                    <i class="fa-solid fa-tree"></i>
-                </div>
-                <div>
-                    <i class="fa-solid fa-tree"></i>
-                </div>
             </div>
             <div class="operation">
                 <img class="operator" src="image/equal.png"/>
             </div>
             <div class="equal">
-                <h2>122</h2>
+                <h2 id="equal2"></h2>
             </div>
         </div>
-    </div>
-    <div class="response">
-      <div>
-          <h1>Ques.<span id="ques">1</span> what is your name?</h1>
+     </div>
+     <div class="response">
+      <div class="question-bar">
+          <div class="questions">   
+          </div>
+          <div>
+            <div>
+                <img class="operator" src="image/equal.png"/>
+            </div>
+          </div>
+           <div>
+            <i  style="color: red; font-size: 45px;" class="fa-solid fa-circle-question"></i>
+           </div>
       </div>
       <div class="answer">
          <div>
              <input value="0" name="answer" type="radio">
-             <lavel for="answer">ayush</lavel>
+             <lavel for="answer"><span id="option0"></span></lavel>
          </div>
+
          <div>
             <input value="1" name="answer" type="radio">
-            <lavel for="answer">ayush</lavel>
+            <lavel for="answer"><span id="option1"></span></lavel>
          </div>
+
          <div>
             <input value="2" name="answer" type="radio">
-            <lavel for="answer">ayush</lavel>
+            <lavel for="answer"><span id="option2"></span></lavel>
          </div>
+
          <div>
             <input value ="3"name="answer" type="radio">
-            <lavel for="answer">ayush</lavel>
+            <lavel for="answer"><span id="option3"></span></lavel>
          </div>
+         
       </div>
-    </div>
-    <div class="analysis">
-        <div>
-            <button class="btn" id="nextEq" disabled>
+     </div>
+     <div class="analysis">
+        <div class="time">
+            <b id="t-id">Coming soon</b>
+            <input class="btn" type="number" id="time" placeholder="Time(InMin)" min="2" max="6" disabled >
+            </input>
+        </div>
+        <div> 
+            <button class="buttonnext btnnext"  id="nextEq" disabled>
                 NextEq
             </button>
         </div>
         <div>
-            <button class="btn" id="Submit">
+            <button class="buttonsubmit btnsubmit"  id="Submit" disabled>
                 Submit
             </button>
         </div>
     </div>
     </div>
+
     <footer>
         <div>
-            <a href="#"><i style="color: blue;" class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.linkedin.com/in/ayush-singhal-a17532203/" target="_blank" ><i style="color: blue;" class="fa-brands fa-linkedin"></i></a>
         </div>
         <div>
-            <a href="#"><i style="color: red;" class="fa-brands fa-github"></i></a>
+            <a href="https://github.com/ayushsing555" target="_blank"><i style="color: red;" class="fa-brands fa-github"></i></a>
         </div>
         <div>
-            <a href="#"><i style="color: green;" class="fa-brands fa-instagram-square"></i></a>
+            <a href="https://www.instagram.com/ayushsinghal27/" target="_blank"><i style="color: green;" class="fa-brands fa-instagram-square"></i></a>
         </div>
-        <div>
-            <a href="#"><i style="color: rgb(245, 97, 97);" class="fa-brands fa-facebook"></i></a>
+        <div> 
+            <a href="https://www.facebook.com/ayush.singhal.75839923/" target="ayush"><i style="color: rgb(245, 97, 97);" class="fa-brands fa-facebook"></i></a>
         </div>
         <div>
            <a href="mailto:ayushsinghalmains@gmail.com"><i  style="color: blue;" class="fa-solid fa-envelope"></i></a>

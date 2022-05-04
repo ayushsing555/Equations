@@ -3,6 +3,11 @@
     display: flex;
     flex-direction: column;
 }
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 .first,.second,.third{
     display: flex;
@@ -13,9 +18,11 @@
 select{
     border:none
 }
-select:hover{
-    cursor: pointer;
+#c-id{
+    display: none;
 }
+
+
 .operator{
     width: 30px;
     height: 30px;
@@ -71,6 +78,9 @@ navvar div{
     margin-left: 4px;
     margin-right: 4px;
 }
+::placeholder{
+    color: red;
+}
 input {
     height: 40px;
     width: 200px;
@@ -87,7 +97,7 @@ input:focus{
 }
 #logo{
     width: 200px;
-    height: 220px;
+    height: 200px;
 }
 .first1,.second1,.third1,.fourth1{
      color: red;
@@ -114,13 +124,6 @@ select{
     font-size: 30px;
 
 }
-#btn1{
-    background-image:linear-gradient(to right,rgb(237, 109, 109) 50%,white 50%);
-    height: 40px;
-    width: 200px;
-    border:none;
-    font-size:20px;
-}
 #btn2{
     background-image:linear-gradient(to left,rgb(237, 109, 109) 50%,white 50%);
     height: 40px;
@@ -142,13 +145,7 @@ button:hover{
     width: auto;
     height:auto;
 }
-#btn1:hover{
-    background-image:linear-gradient(to right,rgb(237, 109, 109) 100%,white 0%);
-    font-size: 25px;
-    border-radius: 10px;
-    border:none;
-    cursor: pointer;
-}
+
 #btn2:hover{
     background-image:linear-gradient(to left,rgb(237, 109, 109) 100%,white 0%);
     font-size: 25px;
@@ -176,8 +173,6 @@ h1{
     padding: 10px;
     border: 2px solid red;
 }
-
-
 .answer div {
     display: flex;
     align-items: center;
@@ -193,33 +188,76 @@ h1{
 }
 .analysis div{
     margin-left: 40px;
-    margin-top: 80px;
+    margin-top: 60px;
 }
 .analysis #nextEq{
     margin-top: 60px;
 }
-#nextEq,#Submit{
-    width: 170px;
+
+
+
+#time:hover{
+    cursor:not-allowed;
+}
+ .buttonnext:hover{
+        cursor: not-allowed;
+ }
+ .buttonstart{
+     background-color: white;
+     border: none;
+     font-size: 25px;
+     height: 40px;
+     width: 170px;
+ }
+ .btnstart:hover{
+     cursor: pointer;
+     background-image:linear-gradient(to right,rgb(237, 109, 109) 100%,white 0%);
+     border-radius: 20px;
+ }
+ .btnstart{
+    background-image:linear-gradient(to right,rgb(237, 109, 109) 50%,white 50%);
+    /* border: 2px solid blue; */
+    color: black;
+    font-size: 25px;
     height: 40px;
-    color: wheat;
-    font-size:25px ;
-    border:none;
-}
-#Submit{
+    width: 170px;
+ }
+ .buttonnext{
+     background-color: white;
+     border: none;
+     font-size: 25px;
+     height: 40px;
+     width: 170px;
+ }
+ .btnsubmit{
     background-color: green;
-}
-#Submit:hover{
-    background-color: white;
     border: 2px solid green;
-    color: black;
-}
-#nextEq{
-    background-color: blue;
-}
-#nextEq:hover{
+    color: wheat;
+    font-size: 25px;
+    height: 40px;
+    width: 170px;
+ }
+ .btnsubmit:hover{
+    cursor: pointer;
     background-color: white;
-    border: 2px solid blue;
     color: black;
+ }
+
+.btnnext{
+    background-color: rgb(0, 55, 255);
+    border: 2px solid blue;
+    color: wheat;
+    font-size: 25px;
+    height: 40px;
+    width: 170px;
+}
+.btnnext:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+#time{
+    font-weight: 1px;
 }
 footer{
     display: flex;
@@ -234,4 +272,63 @@ footer{
 footer div{
     margin-left: 30px;
     font-size: 35px;
+}
+.questions div{
+    margin-left: 10px;
+    
+}
+.questions{
+    display: flex;
+    font-size: 45px;
+}
+
+.question-bar{
+    color: rgb(9, 255, 0);
+    margin-left: 3px;
+    border: 3px solid red;
+    margin: 5px;
+    padding: 8px;
+    width: 340px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-evenly;
+}
+.answer input:hover{
+    cursor: pointer;
+}
+.lavel{
+   margin-top: -5px;
+}
+.coming{
+    display: none;
+}
+#t-id{
+    display: none;
+    font-size: 20px;
+    color: rgb(255, 197, 89);
+}
+
+.result{
+    display: none;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.result img{
+    height: 400px;
+    width: 400px;
+}
+#restart{
+    color: red;
+    font-size: 20px;
+    background-image: url(image/image4.jpg);
+    background-size: cover;
+    border:none;
+    border-radius: 10px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+#restart:hover{
+     background-image: none;
+     background-color: wheat;
 }
