@@ -30,11 +30,6 @@ const NextEq= document.getElementById("nextEq");
 const SubmitBtn= document.getElementById("Submit");
 
 let d;
-let noOfQues = document.getElementById("noOfQues");
-noOfQues.addEventListener("keyup",()=>{
- d = noOfQues.value;
-   console.log(d);
-})
 NextEq.classList.remove("btnnext");
 
 NextEq.classList.add("buttonnext");
@@ -116,9 +111,10 @@ const randomPrice=()=>{
       price[2]= (Math.ceil(Math.random()*90))%7+1;
       return price;
 }
+
 let rightanswer=0;
 function  generateEquations(){
-   questions = document.getElementById("noOfQues").value;
+   
     
    Name = document.getElementById("name").value;
    document.getElementById("name").setAttribute("disabled","");
